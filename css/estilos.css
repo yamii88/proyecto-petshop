@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header-index{
+    background-color: blueviolet;
+    text-decoration-color: white;
+}
+
+
+.menu-nav {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: stretch;
+}
+.main{
+    background-color: white;
+    color:blueviolet
+}
+.section{
+    color: rgb(97, 37, 150);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardimagenmain {
+        margin:20px;
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+    }
+    .productodestcado{
+          text-decoration-color: white;
+            background-color:rgb(97, 37, 150);
+            text-align: center;
+     }
