@@ -7,24 +7,45 @@
     <title>Contacto</title>
     <link rel="stylesheet" a href= "../css/estilos.css">
 </head>
-<body>
-    <header>
+<body class="body">
+    <header class="header-index">
         <div>
             <img src="../imagenes/logo zoocenter.jpg" width="100px" height="100px">
         </div>
-        <nav>
+        <div>
+        <nav class="menu-nav">
 
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../paginas/Alimentos.html"> Alimentos</a></li>
                 <li><a href="../paginas/Accesorios.html">Accesorios</a></li>
                 <li><a href="../paginas/Veterinaria.html"> Veterinaria</a></li>
-                <li><a href="./Contacto">Contacto</a></li>
+                <li><a href="./Contacto.html">Contacto</a></li>
                </nav>
-    
+            </div>
        </header>
    
-       <main>
-   
+       <main class="main">
+        <section>
+        <form> 
+            <div>
+            <label for="nombre">nombre:</label>
+            <input type="text" id="nombre"name= "nombre" placeholder="ingrese el nombre" required>
+        </div>
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" email="email" placeholder="ingres correo" required>
+        </div>
+        
+        <div>
+            <label for="">comentario:</label>
+            <textarea name="comentario" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div>
+            <button>enviar</button>
+        </div>
+        </form>
+       </section>
        </main>
    
        <footer>
