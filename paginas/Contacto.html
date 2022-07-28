@@ -8,40 +8,51 @@
     <link rel="stylesheet" a href= "../css/estilos.css">
 </head>
 <body class="body">
-    <header class="header-index">
-        <div>
-            <img src="../imagenes/logo zoocenter.jpg" width="100px" height="100px">
+    <header>
+        <div class="logo">
+        <img src="../imagenes/logo zoocenter.jpg" width="100px" height="100px">
+       <h2 class="nombre-empresa">ZooCenter</h2>
         </div>
-        <div>
-        <nav class="menu-nav">
-
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/Alimentos.html"> Alimentos</a></li>
-                <li><a href="../paginas/Accesorios.html">Accesorios</a></li>
-                <li><a href="../paginas/Veterinaria.html"> Veterinaria</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
-               </nav>
-            </div>
-       </header>
+        <div> 
+            <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../paginas/Alimentos.html">Alimentos</a>
+            <a href="../paginas/Accesorios.html">Accesorios</a>
+            <a href="../paginas/Veterinaria.html">Veterinaria</a>  
+            <a href="./paginas/Contacto.html">Contacto</a>
+        
+        </nav>
+        </div>
+    </header>
+       
    
        <main class="main">
-        <section>
-        <form> 
-            <div>
-            <label for="nombre">nombre:</label>
-            <input type="text" id="nombre"name= "nombre" placeholder="ingrese el nombre" required>
-        </div>
-        <div>
-            <label for="email">email:</label>
-            <input type="email" id="email" email="email" placeholder="ingres correo" required>
-        </div>
         
-        <div>
-            <label for="">comentario:</label>
-            <textarea name="comentario" cols="30" rows="10"></textarea>
+        <form class="form"> 
+            <h2 class="form__titulo">Hace tu pedido </h2>
+            <p class="form__paragraph">Aun no tienes cuenta</p>
+            <div class="form__container">
+                <div class="form__group">
+                    <input type="text" id="nombre" class="form__input" placeholder="  ">
+            <label for="nombre" class="form__nombre">Nombre</label>
+            <span class="form__line"></span>
+            </div>
+         <div class="form__group">
+        <input type="text" id="usuario" class="form__input" placeholder="  ">
+         <label for="nombre" class="form__nombre">Usuario</label>
+        <span class="form__line"></span>
         </div>
+            
+        <div class="form__group">
+         <input type="text" id="password" class="form__input" placeholder="  ">
+        <label for="nombre" class="form__nombre">Contraseña</label>
+                <span class="form__line"></span>
+                 </div>
+                 <input type="submit" class="form__submit" value="entrar">
+            </div>
+        </div>
+                
         </form>
-       </section>
        </main>
    
        <footer>
