@@ -1,4 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+/*index */
 .body{
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 margin: 0;
@@ -48,29 +53,18 @@ nav{
     background-color: white;
     color:blueviolet
 }
-.section{
-    color: rgb(97, 37, 150);
+.section-container{
+    background: rgb(97, 37, 150);
+    color: white;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content:  center;
+    align-items: center;
 }
-.cardimagenmain {
-        margin:20px;
-        width: 300px;
-        height: 300px;
-        border-radius: 30px;
-    }
-    .productodestcado{
-          text-decoration-color: white;
-            background-color:rgb(97, 37, 150);
-            text-align: center;
-     }
-     .div-1 {
-        background-color:white;
-        color:rgb(97, 37, 150);;
-        font-size: 40px;
-        text-align: center;  
-    }
+
+    
+     
     p {
         color:white;
         background-color:rgb(97, 37, 150);
@@ -81,7 +75,7 @@ nav{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 10px;
+        grid-column-gap: 20px;
         grid-row-gap: 1rem;
         
             }
@@ -89,11 +83,9 @@ nav{
             .div1 { grid-area: 3 / 2 / 4 / 3; }
     
     
-    
-    
     .grid__img{
-        width: 100%;
-        height:100%;
+        display: grid;
+       border-radius: 10px;
         object-fit: cover;
     }
     .grid-footer{
@@ -107,7 +99,7 @@ nav{
         background-color: white;
     }
 
-  
+  /*pagina contacto*/
 main{
     background-color: #e5e5f7;
 opacity: 0.8;
@@ -189,3 +181,73 @@ background-position: 0 0,10px 10px;
        transform: scale(0);
        transform: left bottom;
     }
+/*header veterinaria*/
+
+.container-vet{
+    display: grid;
+    gap: 2.6em;
+    grid-template-columns:repeat(6 , 1fr);
+   
+    background: rgb(230, 139, 195);
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+
+
+}
+
+.container-vet > .header-vet,
+.container-vet > .content-vet,
+.container-vet> .sidebar,
+.container-vet > .footer-vet,
+.container-vet > div {
+    background: #d050e3;
+    color: white;
+    padding: 10px;
+    border: 1px solid #d050e3;
+}
+.container-vet .header-vet,
+.container-vet .footer-vet {
+    grid-column: 1/7;
+    background: #d050e3;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.container-vet .content-vet{
+    grid-column: span 3;
+}
+.content-vet .article{
+    background:  #d050e3;
+    padding: 90px;
+    margin-top: 5px;
+    color: white;
+   
+}
+.container-vet .sidebar{
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.container-vet .sidebar img{
+    width: 100%;
+    margin-top: 90px;
+}
+
+@media screen and ( max-width: 768px) {
+    .header-vet{
+        text-align: center;
+    }
+    .container-vet .content-vet{
+        grid-column: 1/-1 ;
+    }
+    .container-vet .sidebar{
+        grid-column: 1/-1;
+    }
+}
+
